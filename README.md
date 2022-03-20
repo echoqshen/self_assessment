@@ -1,5 +1,10 @@
 # self_assessment
 ### What I Have Accomplished
+My contributions to the project are:
+- Set up API call to scrape necessary reports from St Louis Federal Reserve Economic Data site directly, then combine all reports and merge into one CSV file saved directly into the Resource folder
+- I wrote grapy.py as an alternative to the above mentioned method, scrape API to dataframe, convert it to list. After flatten the list, I was able to add the index to graph and push grapy to html
+- I then tried to connect to MongoDB cloud, load dataframes from fred API into mongo, created 2 collections, able to query data in Mongo, but failed to join the 2 collections in MongoDB
+- I trained 2 machine learning models: KNN and SVR. For KNN model, I used a python library call fredapi to query the API endpoint and create dataframes. I looped thru all the different indexes and create a dataframe for each. After I merged/joined the dataframes on the date, I used pandas library to randomly sample data from the dataset. I ploted the mean square error of the machine learnign results to try and pick a number of nearest neighbors that will work best. Too low and we overfit the data. Too high we lose predictive ability. Basically same steps for SVR model.
 
 ### Team assessment
 ##### Stength
